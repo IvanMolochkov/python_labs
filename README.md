@@ -2,34 +2,34 @@
 
 ## задание №1
 
-![alt text](image-1.png)
+images/lab1/1.png
 
 ## задание №2
 
-![alt text](image-2.png)
+images/lab1/2.png
 
 ## задание №3
 
-![alt text](image-3.png)
+images/lab1/3.png
 
 ## задание №4
 
-![alt text](image-4.png)
+images/lab1/4.png
 
 ## задание №5
 
-![alt text](image-5.png)
+images/lab1/5.png
 
 # Лабораторная работа №2
 
 ## задание №1
 
-![alt text](image-6.png)
+images/lab2/arrays.png
 
 ## задание №2
 
-![alt text](image-7.png)
+images/lab2/matrix.png
 
 ## задание №3
 
-![alt text](image-8.png)
+images/lab2/tuples.png
