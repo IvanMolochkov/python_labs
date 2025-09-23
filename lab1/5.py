@@ -2,7 +2,7 @@ fio = input()
 arr = []
 new_fio = ""
 for e in fio.split():
-    arr.append(e[0])
+    arr.append(e[0].upper())
     new_fio += f"{e} "
 ini = "".join(arr)
 new_fio = new_fio.strip()
