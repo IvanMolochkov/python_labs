@@ -44,3 +44,7 @@
 ## задание №2
 
 ![alt text](images/lab3/text_stats.png)
+
+### вариант оформления задания №2 через таблицу
+
+![alt text](images/lab3/text_stats_table.png)
