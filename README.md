@@ -34,3 +34,13 @@
 ## задание №3
 
 ![alt text](images/lab2/tuples.png)
+
+# Лабораторная работа №3
+
+## задание №1
+
+![alt text](images/lab3/text.png)
+
+## задание №2
+
+![alt text](images/lab3/text_stats.png)
