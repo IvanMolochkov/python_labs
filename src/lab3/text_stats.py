@@ -21,7 +21,7 @@ def table(arr: list[tuple[str, int]], isTable: bool=True):
 def main():
     a = tokenize(normalize(sys.stdin.read()))
     print(f"Всего слов: {len(a)}")
-    print(f"Уникальный слов: {len(set(a))}")
+    print(f"Уникальных слов: {len(set(a))}")
     print("Топ-5:")
     print(table(top_n(count_freq(a), 5), True))
 
