@@ -1,4 +1,4 @@
-from string import ascii_letters
+import re
 
 def normalize(text: str, *, casefold: bool = True, yo2e: bool = True):
     if casefold: text = text.casefold()
@@ -11,18 +11,8 @@ def normalize(text: str, *, casefold: bool = True, yo2e: bool = True):
 
 
 def tokenize(text: str):
-    text += " "
-    new_text = []
-    o = []
-    for e in text:
-        if e in ascii_letters or (e == "-" and o[-1] != " ") or e in "АаБбВвГгДдЕеЁёЖжЗзИиЙйКкЛлМмНнОоПпРрСсТтУуФфХхЦцЧчШшЩщЪъЫыЬьЭэЮюЯя" or e in "0123456789":
-            o.append(e)
-        else:
-            if len(o) != 0: 
-                o = "".join(o)
-                new_text.append(o)
-                o = []
-            else: continue
+    pattern = r'\w+(?:-\w+)*'
+    new_text = re.findall(pattern, text)
     return new_text
 
 
@@ -41,14 +31,7 @@ def count_freq(tokens: list[str]):
     return slovar
 
 
-def top_n(freq: dict[str, int], n: int = 5):
-    kor = []
-    i = n
-    for e in freq:
-        if i == 0: break
-        kor.append((e, freq[e]))
-        i -= 1
-    return kor
+def top_n(freq: dict[str, int], n: int = 5): return sorted(freq.items(), key=lambda x: x[1], reverse=True)[:n]
 
 
 # print("---------------------------------")

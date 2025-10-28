@@ -1,0 +1,40 @@
+import csv
+import os
+from pathlib import Path
+
+def read_text(path: str | Path, encoding: str = "utf-8") -> str:
+    unicode_decode_error = "UnicodeDecodeError\nВыберите существующую кодировку\nНапример: utf-8"
+    try: return Path(path).read_text(encoding=encoding)
+    except FileNotFoundError: return "FileNotFoundError"
+    except LookupError: return unicode_decode_error
+    except UnicodeDecodeError: return unicode_decode_error
+
+
+def write_csv(rows: list[tuple | list], path: str | Path, header: tuple[str, ...] | None = None) -> None:
+    p = Path(path)
+    rows = list(rows)
+    
+    try: p.open("w", newline="", encoding="utf-8")
+    except FileNotFoundError: p = Path(ensure_parent_dir(path))
+    
+    with p.open("w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f)
+        if header is not None:
+            w.writerow(header)
+        for r in rows:
+            w.writerow(r)
+
+
+def ensure_parent_dir(path: str | Path, repeat = False) -> None:
+    repeat_text = "уже" if repeat else "не"
+    inp = str(input(f"Указанная директория {repeat_text} существует\nУкажите имя новой папки: "))
+    try: os.mkdir(f"data/{inp}")
+    except FileExistsError: ensure_parent_dir(path, True)
+    arr = path.split("/")
+    return f"data/{inp}/{arr[-1]}"
+
+
+
+
+# print(read_text("data/lab4/a"))
+# print(write_csv([("cake", 10),("test",3)], "data/lab41/a.csv", ["hghyg"]))

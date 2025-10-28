@@ -48,3 +48,25 @@
 ### вариант оформления задания №2 через таблицу
 
 ![alt text](images/lab3/text_stats_table.png)
+
+# Лабораторная работа №4
+
+## Задание №1
+
+### Примеры вывода из мини теста:
+
+![alt text](images/lab4/mini_test_lab4.png)
+
+### Вывод в check.csv
+
+![alt text](images/lab4/check.csv_lab4.png)
+
+## Задание №2
+
+### Здесь написан скрипт, который читает файл input и импортирует функции из lib (из ЛР3)
+
+![alt text](images/lab4/text_report_lab4.png)
+
+### Выполнив скрипт, который введен в консоль в файл report.csv я вывел следующую информацию:
+
+![alt text](images/lab4/report.csv_lab4.png)
