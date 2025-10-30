@@ -6,7 +6,7 @@ def main():
     arr = [("Всего слов", len(text)), ("Уникальных слов", len(set(text)))]
     for e in top_n(count_freq(text),5):
         arr.append((e[0],e[1]))
-    write_csv(arr, "data/lab4/report.csv")
+    write_csv(arr, "data/lab4/f/report.json")
 
 if __name__ == "__main__":
     main()
