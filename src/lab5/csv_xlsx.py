@@ -5,7 +5,8 @@ from openpyxl.utils import get_column_letter
 
 def csv_to_xlsx(csv_path: str, xlsx_path: str) -> None:
     p = Path(csv_path)
-    if not p.exists(): raise FileNotFoundError(f"файл {csv_path} не найден")
+    if not p.exists(): raise FileNotFoundError("файл не найден")
+    if p.suffix.lower() != '.csv': raise ValueError("файл не является csv-файлом")
     with p.open('r', encoding='utf-8') as f:
         reader = csv.reader(f)
         data = list(reader)
