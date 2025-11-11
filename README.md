@@ -70,3 +70,33 @@
 ### Выполнив скрипт, который введен в консоль в файл report.csv я вывел следующую информацию:
 
 ![alt text](images/lab4/report.csv_lab4.png)
+
+# Лабораторная работа №5
+
+## Задание A
+
+### пример ввода csv-файла:
+
+![alt text](images/lab5/ввод_people.csv.png)
+
+### вывод конвертации csv-файла в JSON:
+
+![alt text](images/lab5/вывод_people_from_csv.json.png)
+
+### также эти манипуляции модно провести и с JSON-файлом:
+
+![alt text](images/lab5/ввод_people.json%20.png)
+
+### пример вывода в csv-файл;:
+
+![alt text](images/lab5/вывод_people_from_json.csv.png)
+
+## Задание B
+
+### вот тот же csv-файл:
+
+![alt text](images/lab5/ввод_people.csv.png)
+
+### проводим конвертацию в Excel-файл:
+
+![alt text](images/lab5/вывод_people.xlsx.png)

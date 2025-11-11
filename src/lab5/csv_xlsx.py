@@ -1,0 +1,26 @@
+import csv
+from pathlib import Path
+from openpyxl import Workbook
+from openpyxl.utils import get_column_letter
+
+def csv_to_xlsx(csv_path: str, xlsx_path: str) -> None:
+    p = Path(csv_path)
+    if not p.exists(): raise FileNotFoundError(f"файл {csv_path} не найден")
+    with p.open('r', encoding='utf-8') as f:
+        reader = csv.reader(f)
+        data = list(reader)
+    if not data: raise ValueError("файл пуст")
+    workbook = Workbook()
+    sheet = workbook.active
+    sheet.title = "Sheet1"
+    for row in data:
+        sheet.append(row)
+    for col_idx, col in enumerate(sheet.columns, 1):
+        max_length = max(len(str(cell.value)) for cell in col)
+        adjusted_width = max((max_length + 2), 8)
+        sheet.column_dimensions[get_column_letter(col_idx)].width = adjusted_width
+    workbook.save(xlsx_path)
+    
+    
+if __name__ == "__main__":
+    csv_to_xlsx("data/lab5/samples/people.csv", "data/lab5/out/people.xlsx")
