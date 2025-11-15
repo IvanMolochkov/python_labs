@@ -113,9 +113,7 @@
 
 ![alt text](images/lab5/вывод_people.xlsx.png)
 
-#### '
-#### '
-#### '
+#### -
 
 
 # Лабораторная работа №6
@@ -141,3 +139,4 @@
 
 ![alt text](images/lab6/help_cli_convert.png)
 
+#### -
