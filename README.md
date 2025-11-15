@@ -20,8 +20,7 @@
 
 ![alt text](images/lab1/5.png)
 
-
-
+#### -
 
 
 # Лабораторная работа №2
@@ -39,8 +38,7 @@
 
 ![alt text](images/lab2/tuples.png)
 
-
-
+#### -
 
 
 # Лабораторная работа №3
@@ -57,8 +55,7 @@
 
 ![alt text](images/lab3/text_stats_table.png)
 
-
-
+#### -
 
 
 # Лабораторная работа №4
@@ -83,8 +80,7 @@
 
 ![alt text](images/lab4/report.csv_lab4.png)
 
-
-
+#### -
 
 
 # Лабораторная работа №5
@@ -117,8 +113,7 @@
 
 ![alt text](images/lab5/вывод_people.xlsx.png)
 
-
-
+#### -
 
 
 # Лабораторная работа №6
