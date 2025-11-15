@@ -100,3 +100,12 @@
 ### проводим конвертацию в Excel-файл:
 
 ![alt text](images/lab5/вывод_people.xlsx.png)
+
+# Лабораторная работа №5
+
+## Задание A
+
+### выполнение команды Cat из cli_text.py:
+
+![alt text](images/lab6/команда Cat.png)
+
