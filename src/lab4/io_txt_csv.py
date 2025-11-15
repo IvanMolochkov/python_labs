@@ -1,5 +1,4 @@
 import csv
-import os
 from pathlib import Path
 
 def read_text(path: str | Path, encoding: str = "utf-8") -> str:
@@ -43,4 +42,4 @@ def write_csv(rows: list[tuple | list], path: str | Path, header: tuple[str, ...
 
 
 # print(read_text("data/lab4/a"))
-print(write_csv([("cake", 10),("test",3)], "data/lab4/a.csv", ["hghyg"]))
+# print(write_csv([("cake", 10),("test",3)], "data/lab4/a.csv", ["hghyg"]))
