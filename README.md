@@ -101,11 +101,26 @@
 
 ![alt text](images/lab5/вывод_people.xlsx.png)
 
-# Лабораторная работа №5
+# Лабораторная работа №6
 
-## Задание A
+## Модуль cli_text
 
-### выполнение команды Cat из cli_text.py:
+### Выполнение команды Cat:
 
-![alt text](images/lab6/команда Cat.png)
+![alt text](images/lab6/команда_Cat.png)
+
+### Выполнение команды Stats:
+
+![alt text](images/lab6/команда_Stats.png)
+
+### Оформление help:
+
+![alt text](images/lab6/help_cli_text.png)
+
+## Модуль cli_convert
+
+### Работу функций из данного модуля можем увидеть в ЛР №5
+### Поэтому приведу только оформление help:
+
+![alt text](images/lab6/help_cli_convert.png)
 
