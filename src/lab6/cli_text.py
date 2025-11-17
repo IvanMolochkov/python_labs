@@ -1,8 +1,8 @@
 import argparse
 from pathlib import Path
 
-from ..lib.text import normalize, tokenize, count_freq, top_n
-from ..lab4.io_txt_csv import read_text
+from src.lib.text import normalize, tokenize, count_freq, top_n
+from src.lab4.io_txt_csv import read_text
 
 
 def main():
