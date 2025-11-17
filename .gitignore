@@ -12,3 +12,9 @@ ehthumbs.db
 
 __pycache__
 .gitattributes
+.pytest_cache
+__init__.py
+
+.coverage
+
+src/spam_eggs.egg-info

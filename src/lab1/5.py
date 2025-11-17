@@ -9,4 +9,3 @@ new_fio = new_fio.strip()
 print(f"ФИО: {new_fio}")
 print(f"Инициалы: {ini}")
 print(f"Длина (символов): {len(new_fio)}")
-

@@ -4,6 +4,7 @@ from pathlib import Path
 from ..lab5.json_csv import json_to_csv, csv_to_json
 from ..lab5.csv_xlsx import csv_to_xlsx
 
+
 def main():
     parser = argparse.ArgumentParser(description="Конвертеры данных")
     sub = parser.add_subparsers(dest="cmd")
@@ -21,18 +22,20 @@ def main():
     p3.add_argument("--out", dest="output", required=True)
 
     args = parser.parse_args()
-    
-    if args.cmd == "json2csv": json_to_csv(args.input, args.output)
-    if args.cmd == "csv2json": csv_to_json(args.input, args.output)
-    if args.cmd == "csv2xlsx": csv_to_xlsx(args.input, args.output)
-        
+
+    if args.cmd == "json2csv":
+        json_to_csv(args.input, args.output)
+    if args.cmd == "csv2json":
+        csv_to_json(args.input, args.output)
+    if args.cmd == "csv2xlsx":
+        csv_to_xlsx(args.input, args.output)
+
 
 if __name__ == "__main__":
     main()
 
 
-
-'   python3 -m src.lab6.cli_convert json2csv --in data/lab5/samples/people.json --out data/lab5/out/people_from_json.csv   '
-'   python3 -m src.lab6.cli_convert csv2json --in data/lab5/samples/people.csv --out data/lab5/out/people_from_csv.json   '
-'   python3 -m src.lab6.cli_convert csv2xlsx --in data/lab5/samples/people.csv --out data/lab5/out/people.xlsx   '
-'   python3 -m src.lab6.cli_convert --help   '
+"   python3 -m src.lab6.cli_convert json2csv --in data/lab5/samples/people.json --out data/lab5/out/people_from_json.csv   "
+"   python3 -m src.lab6.cli_convert csv2json --in data/lab5/samples/people.csv --out data/lab5/out/people_from_csv.json   "
+"   python3 -m src.lab6.cli_convert csv2xlsx --in data/lab5/samples/people.csv --out data/lab5/out/people.xlsx   "
+"   python3 -m src.lab6.cli_convert --help   "

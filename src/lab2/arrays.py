@@ -1,14 +1,20 @@
-def min_max(arr): return [min(arr), max(arr)] if len(arr) > 0 else "ValueError"
-def unique_sorted(arr): 
+def min_max(arr):
+    return [min(arr), max(arr)] if len(arr) > 0 else "ValueError"
+
+
+def unique_sorted(arr):
     a = []
     for e in set(arr):
         a.append(e)
     return sorted(a)
+
+
 def flatten(arr):
     a = []
-    for e in arr: 
-        for el in e: 
-            if type(el) != int: return "TypeError"
+    for e in arr:
+        for el in e:
+            if type(el) != int:
+                return "TypeError"
             a.append(el)
     return a
 
