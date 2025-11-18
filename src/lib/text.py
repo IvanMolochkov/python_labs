@@ -27,11 +27,8 @@ def count_freq(tokens: list[str]):
         for el in tokens:
             if e == el:
                 k += 1
-        if k != 0:
-            slovar[e] = k
-            k = 0
-        else:
-            continue
+        slovar[e] = k
+        k = 0
     return slovar
 
 

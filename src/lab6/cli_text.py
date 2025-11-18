@@ -23,7 +23,7 @@ def main():
         p = Path(args.input)
         if not p.exists():
             raise FileNotFoundError("файл не найден")
-        array_text = tokenize(normalize(read_text(p)))
+        array_text = read_text(p).split("\n")
         if args.n:
             for i, e in enumerate(array_text, 1):
                 print(f"{i}. {e}")
@@ -42,5 +42,6 @@ if __name__ == "__main__":
 
 
 "  python3 -m src.lab6.cli_text cat --input data/input -n   "
+"  python3 -m src.lab6.cli_text cat --input ./src/lab6/cli_convert.py -n   "
 "  python3 -m src.lab6.cli_text stats --input 'привет мир!!! привет!' --top 5   "
 "  python3 -m src.lab6.cli_text --help  "
