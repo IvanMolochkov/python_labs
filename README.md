@@ -163,3 +163,24 @@
 ![alt text](images/lab7/black_test.png)
 
 #### -
+
+
+# Лабораторная работа №8
+
+## students to json:
+
+### Запись json-файла, используя класс Student из модуля models.py:
+
+![alt text](images/lab8/students_output.json.png)
+
+## students_from_json:
+
+### Чтение json-файла:
+
+![alt text](images/lab8/students_input.json.png)
+
+## Вывод информации в консоль:
+
+![alt text](images/lab8/вывод_в_консоль.png)
+
+#### -
