@@ -136,7 +136,7 @@ if __name__ == "__main__":
     group.update("Петров Пётр", gpa=5.0)
     found = group.find("Петров")
     if found:
-        print(f"  Новый GPA: {found[0].gpa}")
+        print(f"Новый GPA: {found[0].gpa}")
 
     print("\n")
     print("Удаление 'Иванов Иван':")
