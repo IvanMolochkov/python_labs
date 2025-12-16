@@ -10,8 +10,6 @@ from src.lab8.models import Student
 class Group:
     def __init__(self, storage_path: str):
         self.path = Path(storage_path)
-        if not self.path.exists():
-            self.path.write_text("", encoding="utf-8")
 
     def _read_all(self):
         rows = []
