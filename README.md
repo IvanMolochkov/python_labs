@@ -202,3 +202,29 @@
 ![alt text](images/lab9/база_данных.png)
 
 #### -
+
+
+
+# Лабораторная работа №10
+
+## Stack и Queue:
+
+### Stack - принцип LIFO (Last In, First Out). Основные операции: push, pop, peek, is_empty.
+### Queue - принцип FIFO (First In, First Out). Основные операции: enqueue, dequeue, peek, is_empty.
+
+![alt text](images/lab10/lab10_structures.png)
+
+### выводы по бенчмаркам:
+
+#### Stack (list) — push/pop O(1), быстрые операции.
+#### Queue (deque) — enqueue/dequeue O(1), быстрее, чем list (pop(0) → O(n)).
+
+## SinglyLinkedList:
+
+### - односвязный список. Основные операции: prepend, append, insert, remove, поиск.
+
+![alt text](images/lab10/lab10_linked_list.png)
+
+### выводы по бенчмаркам:
+
+#### SinglyLinkedList — prepend/append O(1) при наличии tail, вставка/удаление в середине O(n), доступ по индексу O(n).
